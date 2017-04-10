@@ -18,5 +18,3 @@ app.get('/', function(req, res) {
 app.post('/file-size', upload.array('file'), function (req, res) {
     res.send(JSON.stringify({size: req.files[0].size}));
 });
-
-
